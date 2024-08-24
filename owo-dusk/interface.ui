@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>owoDusk</class>
+ <widget class="QMainWindow" name="owoDusk">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>790</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OwO Dusk</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	color: green;
+	background-color: black;
+	border: 1px solid purple;
+}
+QWidget {
+    background-color: black;
+    border: 1px solid purple;
+	color: #ff87ff;
+}
+QFrame {
+    background-color: #06020a;
+    border: 1px solid purple;
+	border-radius: 10px;
+}
+QStackedWidget {
+    background-color: #06020a;
+    border: 2px solid purple;
+	color: aqua;
+	border-radius: 20px;
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QFrame" name="accountFrame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>771</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-radius:9px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="homebtn">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>10</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Home</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="accountsbtn">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>10</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Accounts</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="settingsbtn">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>10</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Settings</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="commandsbtn">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>10</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Commands</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>771</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QStackedWidget {
+    background-color: #06020a;
+    border: 0.8px solid purple;
+	color: #ff87ff;
+	border-radius: 20px;
+}
+QWidget {
+    background-color: #06020a;
+	color: #ff87ff;
+	border-radius: 20px;
+}
+QLabel {
+    background-color: #06020a;
+	color: #ff87ff;
+	font-size: 20px;
+	border: 0;
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>4</number>
+    </property>
+    <widget class="QWidget" name="Home">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>10</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Home</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Accounts">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>10</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string> Accounts</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Settings">
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>10</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Settings</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Commands">
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>10</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Commands</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="About">
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser a {
+    color: #d437ce;
+}
+QTextBrowser a:hover {
+    color: #ff00ff;
+}
+</string>
+     </property>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>10</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>About OwO-Dusk</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>150</y>
+        <width>291</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;OwO-dusk&lt;/span&gt;,&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The best selfbot currently available for OwO bot.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This project was made by EchoQuill and is completely open source!&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Thankyou for your trust in us :&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Links:-&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;https://github.com/EchoQuill/owo-dusk&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="aboutbtn">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>540</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-radius:17px;
+}</string>
+    </property>
+    <property name="text">
+     <string>About</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
