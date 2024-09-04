@@ -20,23 +20,20 @@
    <string notr="true">QMainWindow {
 	color: green;
 	background-color: black;
-	border: 1px solid purple;
+	border: 1px solid #7600d1;
 }
 QWidget {
     background-color: black;
-    border: 1px solid purple;
+    border: 1px solid #7600d1;
 	color: #ff87ff;
 }
 QFrame {
-    background-color: #06020a;
-    border: 1px solid purple;
+    background-color: #11061c;
+    border: 1px solid #691ca3;
 	border-radius: 10px;
 }
-QStackedWidget {
-    background-color: #06020a;
-    border: 2px solid purple;
-	color: aqua;
-	border-radius: 20px;
+QPushButton {
+	border-radius:9px;
 }
 
 </string>
@@ -52,9 +49,7 @@ QStackedWidget {
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton {
-	border-radius:9px;
-}</string>
+     <string notr="true"/>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -121,46 +116,62 @@ QStackedWidget {
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>70</x>
       <y>90</y>
-      <width>771</width>
-      <height>441</height>
+      <width>711</width>
+      <height>451</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QStackedWidget {
-    background-color: #06020a;
-    border: 0.8px solid purple;
+    background-color: #07000d;
+    border: 0.8px solid #580399;
 	color: #ff87ff;
 	border-radius: 20px;
 }
 QWidget {
-    background-color: #06020a;
+    background-color: #07000d;
 	color: #ff87ff;
 	border-radius: 20px;
 }
 QLabel {
-    background-color: #06020a;
+    background-color: #07000d;
 	color: #ff87ff;
 	font-size: 20px;
 	border: 0;
 }</string>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="Home">
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>360</x>
+        <x>300</x>
         <y>10</y>
         <width>91</width>
         <height>41</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <property name="text">
        <string>Home</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="console">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>60</y>
+        <width>621</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextBrowser {border: none; border-radius: 0px;}</string>
       </property>
      </widget>
     </widget>
@@ -168,7 +179,7 @@ QLabel {
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>340</x>
+        <x>290</x>
         <y>10</y>
         <width>91</width>
         <height>41</height>
@@ -183,7 +194,7 @@ QLabel {
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>350</x>
+        <x>300</x>
         <y>10</y>
         <width>81</width>
         <height>41</height>
@@ -193,12 +204,78 @@ QLabel {
        <string>Settings</string>
       </property>
      </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>120</y>
+        <width>160</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QCheckBox" name="checkBox_2">
+         <property name="text">
+          <string>Offline mode</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox">
+         <property name="text">
+          <string>Use Shortforms</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_3">
+         <property name="text">
+          <string>Quests Automation</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>120</y>
+        <width>160</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QCheckBox" name="checkBox_5">
+         <property name="text">
+          <string>Typing Indicator</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_4">
+         <property name="text">
+          <string>Notifications</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_6">
+         <property name="text">
+          <string>CheckBox</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
     <widget class="QWidget" name="Commands">
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>340</x>
+        <x>290</x>
         <y>10</y>
         <width>111</width>
         <height>41</height>
@@ -206,6 +283,16 @@ QLabel {
       </property>
       <property name="text">
        <string>Commands</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
       </property>
      </widget>
     </widget>
@@ -222,8 +309,8 @@ QTextBrowser a:hover {
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>300</x>
-        <y>10</y>
+        <x>260</x>
+        <y>20</y>
         <width>161</width>
         <height>51</height>
        </rect>
@@ -235,7 +322,7 @@ QTextBrowser a:hover {
      <widget class="QTextBrowser" name="textBrowser">
       <property name="geometry">
        <rect>
-        <x>240</x>
+        <x>200</x>
         <y>150</y>
         <width>291</width>
         <height>191</height>
@@ -266,19 +353,56 @@ li.checked::marker { content: &quot;\2612&quot;; }
      </widget>
     </widget>
    </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>79</y>
+      <width>51</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="version_lable">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>470</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>v2.0.0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="logo">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Logo</string>
+     </property>
+    </widget>
+   </widget>
    <widget class="QPushButton" name="aboutbtn">
     <property name="geometry">
      <rect>
       <x>690</x>
-      <y>540</y>
+      <y>550</y>
       <width>80</width>
       <height>23</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-	border-radius:17px;
-}</string>
     </property>
     <property name="text">
      <string>About</string>
