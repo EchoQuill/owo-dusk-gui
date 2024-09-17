@@ -2,6 +2,9 @@ import sys
 from PySide6.QtWidgets import QApplication, QMainWindow, QLabel
 from PySide6.QtGui import QPixmap
 from interface import Ui_owoDusk
+from PySide6.QtCore import Qt
+
+
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -23,11 +26,12 @@ class MainWindow(QMainWindow):
         self.label.setScaledContents(True)
 
         # Load and set the image
-        pixmap = QPixmap('/home/dimlight/Desktop/owo-dusk/imgs/logo.png')
+        pixmap = QPixmap('owo-dusk.png')
         if pixmap.isNull():
             print("Failed to load image")
         else:
-            self.label.setPixmap(pixmap)
+            scaled_pixmap = pixmap.scaled(self.label.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation)
+            self.label.setPixmap(scaled_pixmap)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
