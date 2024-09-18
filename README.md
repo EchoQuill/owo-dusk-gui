@@ -1,2 +1,4 @@
 # owo-dusk-gui
-for me to store the .ui file so that i don't lose it
+The upcoming GUI version of [owo-dusk](https://github.com/echoquill/owo-dusk)
+
+only contains ui as of right now, but star the repo so it reaches to more people and so that i get it done quickly :>>
