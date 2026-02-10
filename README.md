@@ -1,6 +1,6 @@
 # owo-dusk-gui
 The upcoming GUI version of [owo-dusk](https://github.com/echoquill/owo-dusk)
-I always wanted to work on a GUI version of OwO-Dusk, and I have finally started working on it! I hope to release the first alpha version around the middle of january.
+I always wanted to work on a GUI version of OwO-Dusk, and I have finally started working on it! I hope to release the first alpha version around the ~~middle of january.~~ Actually perhaps the middle of march? uhhh exams ;<
 
 ## Help speed up the development by starring this repo!
 
