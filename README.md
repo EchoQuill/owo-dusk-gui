@@ -2,6 +2,11 @@
 The upcoming GUI version of [owo-dusk](https://github.com/echoquill/owo-dusk)
 I always wanted to work on a GUI version of OwO-Dusk, and I have finally started working on it! I hope to release the first alpha version around the ~~middle of january.~~ Actually perhaps the middle of march? uhhh exams ;<
 
+sneek peak 👀
+
+<img width="947" height="731" alt="image" src="https://github.com/user-attachments/assets/88e33aab-52bd-4cd0-b8bd-77942e3d3b8f" />
+
+
 ## Help speed up the development by starring this repo!
 
 [![Star History Chart](https://api.star-history.com/svg?repos=echoquill/owo-dusk,echoquill/owo-dusk-gui&type=date&legend=top-left)](https://www.star-history.com/#echoquill/owo-dusk&echoquill/owo-dusk-gui&type=date&legend=top-left)
